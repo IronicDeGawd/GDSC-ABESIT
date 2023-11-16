@@ -12,9 +12,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="relative bottom-0 mt-16 bg-white dark:bg-neutral-900">
+    <div className="relative bottom-0 mt-16 bg-gray-100">
       <svg
-        className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-white dark:text-neutral-900"
+        className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-white"
         preserveAspectRatio="none"
         viewBox="0 0 1440 54"
       >
@@ -23,7 +23,7 @@ export default function Footer() {
           d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
         />
       </svg>
-      <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 text-gray-700 dark:text-gray-100">
+      <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 text-gray-700">
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <Link
@@ -56,25 +56,25 @@ export default function Footer() {
                   fill="#34A853"
                 />
               </svg>
-              <span className="ml-2 text-xl font-bold tracking-wide dark:text-gray-100 uppercase">
+              <span className="ml-2 text-xl font-bold tracking-wide uppercase">
                 GDSC ABESIT
               </span>
             </Link>
             <div className="mt-4 lg:max-w-sm">
-              <p className="text-sm text-gray-600 dark:text-gray-300">
+              <p className="text-sm text-gray-600">
                 Student driven community to learn and explore everything Google... and beyond!
               </p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
-          <div>
-            <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>About Us</span>
-            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span>
-            </p>
+            <div>
+              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>About Us</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span>
+              </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
-                    href="/"
+                    href="/team"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Meet the Team
@@ -82,10 +82,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/Contributors"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
-                   Contributors
+                    Contributors
                   </Link>
                 </li>
                 <li>
@@ -93,18 +93,18 @@ export default function Footer() {
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
-                    Our Sponsers
+                    Our Sponsors
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-            <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>Useful Links</span>
-            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
+              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>Useful Links</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
-                    href="/"
+                    href="/events"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Past Events
@@ -123,28 +123,28 @@ export default function Footer() {
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
-                   Sitemap
+                    Sitemap
                   </Link>
                 </li>
               </ul>
             </div>
-            
+
 
             <div>
-            <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>Extras</span>
-            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
+              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>Extras</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
-                    href="/"
+                    href="https://gdg.community.dev/gdg-noida/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
-                   GDG Noida
+                    GDG Noida
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/guidelines"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Community Guidelines
@@ -152,7 +152,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="mailto:dsc.abesit@gmail.com"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Mail Us
@@ -163,7 +163,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-red-400 sm:flex-row">
-          <p className="text-sm text-gray-700 dark:text-gray-100">
+          <p className="text-sm text-gray-700">
             © Copyright 2023 GDSC ABES Institute of Technology
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
@@ -202,12 +202,6 @@ export default function Footer() {
               className="transition hover:scale-105 hover:text-gray-500"
             >
               <FaGithub />
-            </Link>
-            <Link
-              href="#"
-              className="transition hover:scale-105 hover:text-blue-500"
-            >
-              <FaFacebook />
             </Link>
           </div>
         </div>
